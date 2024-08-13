@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.7rem;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    background-color:hsl(0, 0%, 98%);
+}
+
+
+main {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+main .content {
+    width: 100%;
+    max-width: 550px;
+    margin:  auto;
+    text-align: center;
+}
+
+main .content h1 {
+    margin-block: 15px;
+}
+
+ p {
+    color: hsl(229, 6%, 66%);
+    font-size: 14px;
+}
+
+main .card-container {
+    display: flex;
+    margin: 50px 0;
+    gap: 2rem;
+}
+
+main .card-container .card-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.card {
+    padding: 20px;
+    box-shadow: 0 1.5rem 1rem -0.5rem hsl(212, 86%, 64%,0.3);
+    border-radius: 4px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.first{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.second{
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.third{
+    border-top: 4px solid hsl(30, 72%, 55%);
+}
+.fourth{
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card svg {
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.weight {
+    font-weight: 400;
+    color: hsl(234, 12%, 34%);
+}
+
+@media screen and (max-width : 500px) {
+    .card-container {
+        flex-direction: column;
+    }
+    main .card-container .card-holder {
+        width: 100%;
+    }
+    main .content {
+        text-align: left;
+    }
+}
